@@ -1,0 +1,27 @@
+@charset "UTF8"; 
+*{ margin: 0; padding: 0; text-decoration: none; font-size: 1rem; color: #333333; list-style: none; font-family: sans-serif; } body{ background: #ffffff; } 
+
+#index_wrap{ width: 1200px; height: 700px; margin: 0 auto; } 
+
+/***-----헤더시작-----***/ 
+header{ width: 100%; height: 100px; } 
+.logo_box{ float: left; width: 100px; height: 20px; padding: 10px; } 
+
+nav{ float: right; margin-right: 50px; margin-top: 28px; text-align: center; } 
+nav>ul{ display: inline; font-size: 0; } 
+nav>ul>li{ display: inline-block; background: dimgrey; } 
+nav>ul>li>a{ display: block; width: 180px; height: 40px; line-height: 2.6rem; font-size: 1.2rem; color: white; } 
+
+.submenu{ display: none; position: absolute; height: 150px; padding: 15px 0; background: rgba(255,255,255,0.9) } 
+.submenu>li{ width: 180px; height: 20px; padding: 5px 0; } 
+.submenu>li>a{ display: block; } 
+
+nav>ul>li:hover>a{ background: grey; } 
+.submenu>li:hover{ background: rgba(0,118,190,0.2); } 
+.submenu>li:hover>a{ color: #0076BE; text-decoration: underline; } 
+/***-----헤더끝-----***/
+
+/***-----슬라이드시작-----***/ 
+#slide{ width: 1200px; height: 300px; overflow: hidden; } 
+#slide_img_wrap{ width: 3600px; height: 300px; font-size: 0; } 
+/***-----슬라이드끝-----***/
