@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head> <meta charset="UTF-8"> 
+    <title>대한투어</title> 
+    <link rel="stylesheet" href="css/style316.css">
+</head>
+
+<body> 
+    <div id="index_box"> 
+        <header> 
+            <div id="logo"><img src="img/logo1.png" alt="대한투어로고" width="150px"></div>
+            <nav>
+                <ul> 
+                    <li><a href="#">해외여행</a> 
+                        <ul class="sub_menu"> 
+                            <li><a href="#">동남아/대만</a></li> 
+                            <li><a href="#">중국/홍콩</a></li> 
+                            <li><a href="#">유럽/두바이</a></li> 
+                            <li><a href="#">미주/하와이</a></li> 
+                        </ul> 
+                    </li> 
+                    <li><a href="#">국내여행</a> 
+                        <ul class="sub_menu"> 
+                            <li><a href="#">서울/경기권</a></li> 
+                            <li><a href="#">충청권</a></li> 
+                            <li><a href="#">전라권</a></li> 
+                            <li><a href="#">경상/강원권</a></li> 
+                        </ul> 
+                    </li> 
+                    <li><a href="#">제주도</a> 
+                        <ul class="sub_menu">
+                            <li><a href="#">버스여행</a></li> 
+                            <li><a href="#">자유여행</a></li> 
+                            <li><a href="#">호텔/펜션</a></li> 
+                        </ul> 
+                    </li> 
+                    <li><a href="#">렌터카</a> 
+                        <ul class="sub_menu"> 
+                            <li><a href="#">국내 렌터카</a></li> 
+                            <li><a href="#">국외 렌터카</a></li> 
+                        </ul> 
+                    </li> 
+                </ul> 
+                <div class="menu_bg"></div> 
+            </nav> 
+        </header>
+        <main> 
+            <section id="slide"> 
+                <div id="slide_wrap"> 
+                    <img src="img/slide01.jpg" alt="s1" width="1200" height="300"> 
+                    <img src="img/slide02.jpg" alt="s2" width="1200" height="300">  
+                    <img src="img/slide03.jpg" alt="s3" width="1200" height="300"> 
+                </div> 
+            </section>
+        </main>
+</div>
+        <!-- <script type="text/javascript" src="js/script.js"></script> -->
+        <script>
+            alert("hello javascript");
+            $("nav>ul>li").mouseenter(function () { 
+    $(".sub_menu").stop().slideDown('slow'); 
+    $(".menu_bg").stop().slideDown('slow'); 
+}); 
+
+$("nav>ul>li").mouseleave(function () { 
+    $(".sub_menu").stop().slideUp('slow'); 
+    $(".menu_bg").stop().slideUp('slow'); 
+});
+
+setInterval(function () { 
+    $("#slide_wrap").delay('2500'); 
+    $("#slide_wrap").animate({ marginTop: "-300px" }, '700'); 
+    $("#slide_wrap").delay('2500'); 
+    $("#slide_wrap").animate({ marginTop: "-600px" }, '700'); 
+    $("#slide_wrap").delay('2500'); 
+    $("#slide_wrap").animate({ marginTop: "0" }, '700'); 
+});
+        </script>
+    </body>
+</html>
